@@ -1,24 +1,15 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
-export default function Icon({
-  name,
-  size = 40,
-  backgroundColor = '#000',
-  iconColor = '#fff',
-}) {
+export default function Icon({name, size = 45, iconColor = '#000'}) {
   return (
     <View
       style={{
-        width: size,
-        height: size,
-        borderRadius: size / 2,
-        backgroundColor,
         justifyContent: 'center',
         alignItems: 'center',
       }}>
-      <MaterialCommunityIcons name={name} color={iconColor} size={size / 2} />
+      <Ionicons name={name} color={iconColor} size={size / 2} />
     </View>
   );
 }
